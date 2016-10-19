@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.feicui.daynews">
+    <!--连接网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--引导界面-->
+        <activity android:name=".activity.GuideActivity">
+
+        </activity>
+        <!--加载界面-->
+        <activity android:name=".activity.LoadActivity">
+
+        </activity>
+        <!--主界面-->
+        <activity android:name=".activity.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NewsDetailActivity"></activity>
+        <!--个人中心界面-->
+        <activity android:name=".activity.UserInfoActivity"></activity>
+        <!--银联支付开始-->
+        <!--<activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>-->
+        <!--银联支付结束-->
+    </application>
+</manifest>

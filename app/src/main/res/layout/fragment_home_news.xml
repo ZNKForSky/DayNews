@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:text="社会   军事   IT   人文   地理"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tv_choose_more_news_home"
+            android:layout_width="50dp"
+            android:background="@drawable/choss_more_list_home_news"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:background="#a9a9a9"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <edu.feicui.daynews.view.XListView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

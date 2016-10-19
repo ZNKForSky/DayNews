@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TextView
+       android:gravity="center"
+       android:textSize="36sp"
+       android:text="设置您的靓照"
+       android:layout_width="match_parent"
+       android:layout_height="60dp" />
+    <LinearLayout
+        android:id="@+id/ll_camera"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@mipmap/photo_take"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="26sp"
+            android:text="调用相机拍照"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_photo_sel"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@mipmap/photo_sel"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="26sp"
+            android:text="从图库中选择"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
